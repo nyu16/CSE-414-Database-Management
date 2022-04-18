@@ -1,0 +1,56 @@
+3.a 
+  R(ABCDE): D->B, CE->A
+  R1: 
+    Check:
+      D+=BD therefore D+ != D, D+ != [all attributes]
+    X is found, therefore:
+      ABCDE - BD -> ACDE, BD
+
+  = R1(BD)
+
+  R2:
+    Check:
+      CE+=ACE therefore CE+ != CE, CE+ != [all attributes]
+    X is found, therefore:
+      ACDE - ACE -> CDE, ACE
+  = R2(ACE), R3(CDE)
+
+Conclude: R1(BD), R2(ACE), R3(CDE)
+
+3.b
+  R(ABCDE): A->E, BC->A, DE->B
+  R1:
+    Check:
+      BC+=ABCE therefore BC+ != BC, BC+ != [all attributes]
+  X is found, therefore:
+    ABCDE - ABCE ->, ABCE
+
+  = R1(BCD)
+
+  R2:
+    Check:
+      A+=AE therefore A+ != A, A+ != [all attributes]
+    X is found, therefore:
+      ABCE - AE -> AE, ABC
+
+  = R2(AE), R3(ABC)
+
+Conclude: R1(BCD), R2(AE), R3(ABC)
+
+3.c
+A->A
+B->B
+C->C
+D->D
+
+3.d
+A->D
+B->C
+C->B
+D->A
+
+3.e
+A->B, D
+B->C
+C->B
+D->A, C
